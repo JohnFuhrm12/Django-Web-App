@@ -1,2 +1,2 @@
 # Django-Web-App
-A web application built with Python and the Django framework
+A web application built with the Django framework
