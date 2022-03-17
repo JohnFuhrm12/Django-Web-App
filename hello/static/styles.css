@@ -3,12 +3,6 @@ body {
     }
 
     h1 {
-        font-size: 50px;
-        text-align: center;
-        color: rgb(0, 149, 255);
-    }
-
-    h2 {
         font-size: 40px;
         text-align: center;
         color: rgb(0, 149, 255);
@@ -20,9 +14,39 @@ body {
         color: white;
     }
 
+    p1 {
+        text-align: center;
+        font-size: 30px;
+        color: white;
+    }
+
     .center {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+
+    li, a {
+        font-size: 30px;
+        text-decoration: none;
+        color: rgb(0, 149, 255);
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 25px;
+    }
+
+    .nav_links {
+        list_style: none;
+    }
+
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 10px;
+    }
+
+
 
