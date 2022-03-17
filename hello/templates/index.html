@@ -5,16 +5,23 @@
         <meta charset="UTF-8">
         <meta name="description" content="This is a website description">
         <title>Django Site</title>
-        {% load static %}
-        <link rel="stylesheet" href="{% static 'styles.css'%}">
+        <link rel="stylesheet" href="../static/styles.css">
+        <link rel="shortcut icon" type="image/png" href="../static/favicon.png"/>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <p>This is a paragraph.</p>
-        <p>This is another block of text.</p>
-        <a href="page.html"><h2>Go to page 2</h2></a>
-        <hr>
-        <a href="https://github.com/JohnFuhrm12" target="-blank"><h2>Github Link</h2></a>
-        <img width="200" height ="250" src="../static/palm.jpg" alt="palm tree" class="center"/>
+        <header>
+            <h1>Hello World!</h1>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="page.html">Next</a></li>
+                    <li><a href="https://github.com/JohnFuhrm12" target="-blank">Github Link</a></li>
+                </ul>
+            </nav>
+        </header>
+    <hr>
+    <h1>Paragraph 1</h1>
+    <p1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales commodo velit, ac rhoncus sapien malesuada nec. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed faucibus tristique imperdiet. Cras sed tellus lacus. Nullam ac sapien iaculis, molestie velit eget, lobortis nibh. Aenean vel metus neque.</p1>
+    <h1>Paragraph 2</h1>
+    <p1>Ut eros ipsum, rutrum id tincidunt ac, porta quis augue. Praesent finibus quis tortor in lacinia. Donec lobortis elementum arcu, at volutpat sem ultrices eu. Morbi aliquet volutpat enim, in ultricies orci vestibulum et. Praesent ultrices pretium augue sed congue. Nam aliquet sollicitudin ligula, sed ultrices est ultrices eget. Aliquam suscipit viverra sagittis.</p1>
     </body>
 </html>
