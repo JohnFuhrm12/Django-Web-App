@@ -1,11 +1,10 @@
 <!-- This is how to write HTML pages -->
-<!-- Links can also link to other website pages -->
 
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="This is a website description">
-        <title>My Website</title>
+        <title>Django Site</title>
         {% load static %}
         <link rel="stylesheet" href="{% static 'styles.css'%}">
     </head>
@@ -13,8 +12,9 @@
         <h1>Hello World!</h1>
         <p>This is a paragraph.</p>
         <p>This is another block of text.</p>
+        <a href="page.html"><h2>Go to page 2</h2></a>
         <hr>
-        <a href="https://github.com/JohnFuhrm12" target="-blank"><h1>Github Link</h1></a>
+        <a href="https://github.com/JohnFuhrm12" target="-blank"><h2>Github Link</h2></a>
         <img width="200" height ="250" src="../static/palm.jpg" alt="palm tree" class="center"/>
     </body>
 </html>
