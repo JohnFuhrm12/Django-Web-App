@@ -18,6 +18,7 @@ from django.urls import path
 from hello import views
 
 urlpatterns = [
-    path('hello/', views.index)
+    path('hello/', views.index),
+    path('hello/page.html', views.page)
 ]
 
