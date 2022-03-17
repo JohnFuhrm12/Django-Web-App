@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <a href="http://127.0.0.1:8000/djangosite/"><h1>Hello World!</h1></a>
+            <a href="http://127.0.0.1:8000/"><h1>Hello World!</h1></a>
             <nav>
                 <ul class="nav_links">
                     <li><a href="about">About</a></li>
@@ -17,9 +17,13 @@
                 </ul>
             </nav>
         </header>
-    <hr>
-    <h1>Paragraph 1</h1>
-    <p>This is a paragraph.</p>
+        <hr>
+        <h1>Posts:</h1>
+        {% for post in posts %}
+            <h1>{{ post.title }}</h1>
+            <p>By {{ post.author }} on {{ post.date_posted }}</p>
+            <p>{{ post.content }}</p>
+        {% endfor %}
         <div class="div1">
             <h1>Div</h1>
         </div>
