@@ -5,3 +5,6 @@ def index(request):
 
 def page(request):
   return render(request, 'page.html')
+
+def test(request):
+  return render(request, 'testpage.html')
