@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="This is a website description">
@@ -11,9 +12,14 @@
             <a href=""><h1>Hello World!</h1></a>
             <nav>
                 <ul class="nav_links">
-                    <li><a href="about">About</a></li>
-                    <li><a href="test">Test</a></li>
-                    <li><a href="https://github.com/JohnFuhrm12" target="-blank">GitHub</a></li>
+                    <li><a href="http://127.0.0.1:8000/about">About</a></li>
+                    <li><a href="http://127.0.0.1:8000/test">Test</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="http://127.0.0.1:8000/logout">Logout</a></li>
+                    {% else %}
+                    <li><a href="http://127.0.0.1:8000/login">Login</a></li>
+                    <li><a href="http://127.0.0.1:8000/register">Sign Up</a></li>
+                    {% endif %}
                 </ul>
             </nav>
         </header>
