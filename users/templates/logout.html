@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load crispy_forms_tags %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a website description">
+        <title>Django Site</title>
+        <link rel="stylesheet" href="../static/ustyles.css">
+        <link rel="shortcut icon" type="image/png" href="../static/favicon.png"/>
+    </head>
+    <body>
+        <header>
+            <a href="http://127.0.0.1:8000/home"><h1>Hello World!</h1></a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="http://127.0.0.1:8000/about">About</a></li>
+                    <li><a href="http://127.0.0.1:8000/test">Test</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="http://127.0.0.1:8000/logout">Logout</a></li>
+                    {% else %}
+                    <li><a href="http://127.0.0.1:8000/login">Login</a></li>
+                    <li><a href="http://127.0.0.1:8000/register">Sign Up</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <h2>You have been logged out</h2>
+            <div class="formclass2">
+                <small class="textclass">
+                     <a href="http://127.0.0.1:8000/login">Login again</a>
+                </small>
+            </div>
+        </div>
+    </body>
+</html>
