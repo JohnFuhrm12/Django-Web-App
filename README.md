@@ -1,5 +1,5 @@
 # Django-Web-App
-A web application built with the Django framework
+A web application built with the Django framework, strictly to learn the framework
 
 # Images
 ![sign](https://user-images.githubusercontent.com/61069716/160496546-5c90f787-4a17-4574-89ee-0b53752dc059.png)
